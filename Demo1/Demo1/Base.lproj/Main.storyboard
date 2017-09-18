@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4pZ-CD-Je7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Palli-Checker-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Pallindrome" id="BYZ-38-t0r" customClass="PallindromeViewController" customModule="Demo1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Word Here" borderStyle="roundedRect" textAlignment="center" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="fnH-gC-91h">
+                                <rect key="frame" x="16" y="41" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="pallindromeFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="LDO-3t-kFj"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Not" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAT-tm-qFz">
+                                <rect key="frame" x="130" y="79" width="115" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ks2-ph-kJO">
+                                <rect key="frame" x="170" y="135" width="35" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pallindrome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6N6-oh-xy0">
+                                <rect key="frame" x="79" y="191" width="217" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6N6-oh-xy0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="63" id="1Ah-z1-7wS"/>
+                            <constraint firstItem="6N6-oh-xy0" firstAttribute="top" secondItem="Ks2-ph-kJO" secondAttribute="bottom" constant="8" id="6GY-fT-nf8"/>
+                            <constraint firstItem="Ks2-ph-kJO" firstAttribute="top" secondItem="OAT-tm-qFz" secondAttribute="bottom" constant="8" id="8D4-0k-Ihl"/>
+                            <constraint firstItem="fnH-gC-91h" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="EHr-wF-gY4"/>
+                            <constraint firstItem="Ks2-ph-kJO" firstAttribute="top" secondItem="OAT-tm-qFz" secondAttribute="bottom" constant="8" id="IWe-yo-NW7"/>
+                            <constraint firstItem="6N6-oh-xy0" firstAttribute="top" secondItem="Ks2-ph-kJO" secondAttribute="bottom" constant="8" id="J9K-g1-RUo"/>
+                            <constraint firstItem="fnH-gC-91h" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="N4H-3x-HbF"/>
+                            <constraint firstItem="OAT-tm-qFz" firstAttribute="top" secondItem="fnH-gC-91h" secondAttribute="bottom" constant="8" id="TSS-Di-rdJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OAT-tm-qFz" secondAttribute="trailing" constant="114" id="Tmn-2b-RBf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6N6-oh-xy0" secondAttribute="trailing" constant="63" id="WQJ-dk-7jZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6N6-oh-xy0" secondAttribute="bottom" constant="379" id="Zy5-5w-uoH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ks2-ph-kJO" secondAttribute="trailing" constant="154" id="bQC-iU-3DF"/>
+                            <constraint firstItem="Ks2-ph-kJO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="154" id="oie-Ug-hts"/>
+                            <constraint firstItem="fnH-gC-91h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oy2-SS-j9j"/>
+                            <constraint firstItem="OAT-tm-qFz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="114" id="uIb-lb-p4O"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Palli-Checker" image="Palli-Checker" id="R24-Ku-eqw"/>
+                    <connections>
+                        <outlet property="isLabel" destination="OAT-tm-qFz" id="V0P-Tz-Wez"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="-259.52023988005999"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="Zj9-X3-icU">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ygr-n7-Bst" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="yZJ-HM-XoE" customClass="aboutViewController" customModule="Demo1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WCG-dQ-jrS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bin-co-6PZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rie-5P-YIz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6Y-rq-04G">
+                                <rect key="frame" x="104" y="180" width="166" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="About"/>
+                                <connections>
+                                    <action selector="alertButton:" destination="yZJ-HM-XoE" eventType="touchDown" id="NAp-HO-ZEj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bin-co-6PZ" firstAttribute="top" secondItem="s6Y-rq-04G" secondAttribute="bottom" constant="378" id="5Fl-5T-7Pr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="s6Y-rq-04G" secondAttribute="trailing" constant="89" id="Fwg-F9-wGN"/>
+                            <constraint firstItem="s6Y-rq-04G" firstAttribute="leading" secondItem="Rie-5P-YIz" secondAttribute="leadingMargin" constant="88" id="qDy-yc-02D"/>
+                            <constraint firstItem="s6Y-rq-04G" firstAttribute="top" secondItem="WCG-dQ-jrS" secondAttribute="bottom" constant="160" id="yUm-Yd-TgN"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="About" id="iRd-5b-r7o"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="940" y="457.42128935532236"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="c15-Fu-9dv">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="4pZ-CD-Je7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleAspectFit" id="xIL-2I-5nP">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="syS-yK-h55"/>
+                        <segue destination="yZJ-HM-XoE" kind="relationship" relationship="viewControllers" id="H7Y-Wt-S5V"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IzR-oA-Rif" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="About" width="40" height="40"/>
+        <image name="Palli-Checker" width="16" height="16"/>
+    </resources>
+</document>
